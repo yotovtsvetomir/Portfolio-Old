@@ -1,0 +1,121 @@
+.skills {
+  position: relative;
+  background: url('../assets/skills.jpg') no-repeat scroll center center / cover;
+}
+
+.skills:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255, .92);
+}
+
+.skills_wrapper {
+  position: relative;
+  z-index: 5;
+  padding: 70px 0 80px 0;
+}
+
+.owlslide {
+  padding-top: 30px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.next {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(calc(-50% + 42px));
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: $primaryBlue;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.prev {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(calc(-50% - 42px));
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: $primaryBlue;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.prev svg, .next svg {
+    display: inline-block;
+    align-self: center;
+}
+
+.skill {
+  box-sizing: border-box;
+  height: 335px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 25px;
+  @media (min-width: 481px) {
+    padding: 0 20px;
+  }
+}
+
+.skill-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 35%;
+}
+
+.skill p {
+  font-size: 13px;
+  line-height: 15px;
+  color: $primaryBlue;
+  margin-bottom: 10px;
+}
+
+.skill + span {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 16px;
+  color: $primaryBlue;
+}
+
+.dot {
+  display: block;
+  background: $primaryBlue;
+  width: 7px;
+  min-height: 7px;
+  border-radius: 50%;
+}
+
+.sline {
+  display: block;
+  width: 1px;
+  height: 73px;
+  background: $primaryBlue;
+}
+
+.block {
+  height: 65%;
+  width: 100%;
+  border-radius: 2px;
+  background: $primaryBlue;
+}
